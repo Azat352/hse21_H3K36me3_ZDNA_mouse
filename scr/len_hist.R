@@ -3,11 +3,10 @@ source('lib.R')
 
 ###
 
-NAME <- 'DeepZ'
-#NAME <- 'H3K4me3_A549.ENCFF573MUH.hg19'
-#NAME <- 'H3K4me3_A549.ENCFF573MUH.hg38'
-#NAME <- 'H3K4me3_A549.ENCFF832EOL.hg19'
-#NAME <- 'H3K4me3_A549.ENCFF832EOL.hg38'
+# NAME <- 'mouseZ-DNA2'
+# NAME <- 'H3K36me3_MEL.CENCFF503JQE'
+NAME <- 'H3K36me3_MEL.ENCFF390YLK'
+
 
 ###
 
@@ -22,4 +21,3 @@ ggplot(bed_df) +
   ggtitle(NAME, subtitle = sprintf('Number of peaks = %s', nrow(bed_df))) +
   theme_bw()
 ggsave(paste0('len_hist.', NAME, '.pdf'), path = OUT_DIR)
-
