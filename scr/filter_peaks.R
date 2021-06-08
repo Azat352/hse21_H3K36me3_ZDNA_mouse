@@ -3,8 +3,8 @@ source('lib.R')
 
 ###
 
-# NAME <- 'H3K36me3_MEL.ENCFF390YLK'
-NAME <- 'H3K36me3_MEL.ENCFF503JQE'
+NAME <- 'H3K36me3_MEL.ENCFF390YLK'
+# NAME <- 'H3K36me3_MEL.ENCFF503JQE'
 
 ###
 
@@ -23,7 +23,7 @@ ggsave(paste0('filter_peaks.', NAME, '.init.hist.pdf'), path = OUT_DIR)
 # Remove long peaks
 bed_df <- bed_df %>%
   arrange(-len) %>%
-  filter(len < 3000)
+  filter(len < 2000)
   
 ggplot(bed_df) +
   aes(x = len) +
