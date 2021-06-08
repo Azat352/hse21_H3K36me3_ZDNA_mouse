@@ -4,8 +4,8 @@ source('lib.R')
 ###
 
 # NAME <- 'mouseZ-DNA2'
-# NAME <- 'H3K36me3_MEL.CENCFF503JQE'
-NAME <- 'H3K36me3_MEL.ENCFF390YLK'
+NAME <- 'H3K36me3_MEL.ENCFF503JQE'
+# NAME <- 'H3K36me3_MEL.ENCFF390YLK'
 
 
 ###

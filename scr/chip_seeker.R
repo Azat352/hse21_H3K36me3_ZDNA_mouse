@@ -1,17 +1,15 @@
-#!/usr/bin/R
 source('lib.R')
 
+
 ###
-.libPaths(c("~/libr", .libPaths()))
-#if (!requireNamespace("BiocManager", quietly = TRUE))
-#	install.packages("BiocManager")
-#BiocManager::install("TxDb.Hsapiens.UCSC.hg19.knownGene")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
 BiocManager::install("TxDb.Mmusculus.UCSC.mm10.knownGene")
 BiocManager::install("ChIPseeker")
+BiocManager::install("clusterProfiler")
 
-library(ChIPseeker)
-# library(TxDb.Hsapiens.UCSC.hg19.knownGene)
 library(TxDb.Mmusculus.UCSC.mm10.knownGene)
+library(ChIPseeker)
 library(clusterProfiler)
 
 ###
