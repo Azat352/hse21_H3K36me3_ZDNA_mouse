@@ -1,0 +1,6 @@
+#Deleted in new
+chr11	34681839	34682256
+#Deleted in new
+chr11	34682412	34682427
+#Partially deleted in new
+chr11	60541346	60541656
